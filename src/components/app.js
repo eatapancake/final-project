@@ -2,9 +2,11 @@ import React from "react";
 //Import Pages here c:
 import AddRecipe from "../pages/add-recipe.js";
 import ViewRecipe from "../pages/view-recipe.js";
+import Home from "../pages/home";
 //Import Header + Footer here
 
 import { Link, BrowserRouter, Switch, Route } from "react-router-dom";
+import RecipeEditPage from "../pages/recipe-edit-page.js";
 
 function App() {
   return (
@@ -19,8 +21,11 @@ function App() {
           <AddRecipe />
         </Route>
         <Route path="/" exact>
-          Home Page
-          {/* <Home /> */}
+          <Home />
+        </Route>
+
+        <Route path="/Recipe">
+          <RecipeEditPage />
         </Route>
       </Switch>
       {/* <Footer /> */}
