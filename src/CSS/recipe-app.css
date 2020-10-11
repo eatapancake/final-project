@@ -1,0 +1,47 @@
+.recipe-form__title {
+  padding-bottom: 2rem;
+  height: 100%;
+}
+.recipe-form__label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.recipe-app__button__ingredient {
+  display: block;
+  /* width: 50%;
+  height: 100%; */
+  padding: 0.5rem;
+  cursor: pointer;
+  background: rgb(255, 247, 238);
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  color: rgb(148, 65, 27);
+  outline: none;
+  border: 3px solid transparent;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.recipe-app__button__steps {
+  display: block;
+  /* width: 50%;
+  height: 100%; */
+  padding: 0.5rem;
+  cursor: pointer;
+  background: rgb(255, 247, 238);
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  color: rgb(148, 65, 27);
+  outline: none;
+  border: 3px solid transparent;
+  margin-top: 1rem;
+  margin-left: 7rem;
+  margin-bottom: 1.5rem;
+}
+.recipe-form {
+  text-align: center;
+}

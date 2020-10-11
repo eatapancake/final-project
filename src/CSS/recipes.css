@@ -1,0 +1,6 @@
+.ingredient-list {
+  list-style: square;
+}
+.steps-list {
+  list-style: decimal;
+}

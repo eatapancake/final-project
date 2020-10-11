@@ -1,26 +1,30 @@
-import React, { useState } from "react";
-//HOOK
-function AddRecipe() {
-  //instead of string, maybe try adding doing ingredient as a prop?
-  const [ingredient, setIngredient] = useState("");
-  const onIngredientInputChange = (event) => {
-    const value = event.target.value;
-    console.log(value);
-    setIngredient(value);
-  };
+import React from "react";
+import Header from "../components/header";
 
+const recipeName = JSON.parse(localStorage.getItem("name"));
+// const test = useLocalStorage.call('name')
+const ingredients = localStorage.getItem("ingredients");
+const steps = localStorage.getItem("steps");
+
+// const ingredientsMarkup = [];
+// for (const ingredient of ingredients) {
+//   ingredientsMarkup.push(<li key={ingredient}>{ingredient}</li>);
+// }
+
+function AddRecipe() {
   return (
     <main>
-      <div>
-        <input
-          type="text"
-          value={ingredient}
-          onChange={onIngredientInputChange}
-        />
-      </div>
-      <button>Add ingredient</button>
-      {/* <button onClick={onbuttonClick}>Cancel</button>
-      <button onClick={onbuttonClick}>Submit</button> */}
+      <Header />
+      <h1>{recipeName}</h1>
+      {/* Add Image */}
+      <h2>Ingredients</h2>
+      <ul>
+        <il>{ingredients}</il>
+      </ul>
+      <h2>Steps</h2>
+      <ul>
+        <il>{steps}</il>
+      </ul>
     </main>
   );
 }
