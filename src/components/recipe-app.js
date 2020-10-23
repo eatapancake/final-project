@@ -71,7 +71,7 @@ function RecipeApp() {
     <form className="recipe-form" onSubmit={onFormSubmit}>
       <Header />
       <input
-        className="recipe-form__input"
+        className="recipe-form__title"
         type="text"
         id="name"
         value={name}
